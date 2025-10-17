@@ -17,3 +17,33 @@ variable "key_name" {
   description = "The name of the SSH key pair."
   default     = "terraform-key"
 }
+
+variable "aws_region" {
+  description = "A AWS region para criar recursos."
+  default     = "us-east-2"
+}
+
+variable "db_name" {
+  description = "Nome do banco de dados RDS."
+  default     = "studentdb"
+}
+
+variable "db_username" {
+  description = "Usuário admin do banco RDS."
+  default     = "student"
+}
+
+variable "db_password" {
+  description = "Senha do banco RDS."
+  default     = "SuperSecret123!"
+}
+
+variable "instance_class" {
+  description = "Classe da instância do RDS."
+  default     = "db.t2.micro"
+}
+
+variable "engine" {
+  description = "Motor do banco RDS (MySQL, PostgreSQL, etc)."
+  default     = "postgres"
+}
